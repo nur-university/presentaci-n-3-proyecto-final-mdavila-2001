@@ -1,4 +1,6 @@
-const DATA_URL = '/json/dashboard/dashboard.json';
+const DATA_URL = document.location.pathname.includes('/pages/') 
+  ? '../../json/dashboard/dashboard.json'
+  : 'json/dashboard/dashboard.json';
 
 async function loadProjects() {
     try {
