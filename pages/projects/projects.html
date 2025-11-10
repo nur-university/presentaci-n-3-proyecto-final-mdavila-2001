@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Danny Marcelo Dávila Barrancos">
+        <meta name="description" content="Listado de proyectos para colaborar y donar">
+        <meta property="og:title" content="Proyectos - AportaYa">
+        <meta property="og:author" content="Danny Marcelo Dávila Barrancos">
+        <meta property="og:description" content="Listado de proyectos para colaborar y donar">
+        <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../../styles/styles.css">
+        <link rel="stylesheet" href="../../styles/components/header.css">
+        <link rel="stylesheet" href="../../styles/pages/projects.css">
+
+        <link rel="stylesheet" href="../../styles/fonts.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <title>Proyectos - AportaYa</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <a class="logo" href="../../index.html" aria-label="Ir a inicio">
+                    <img src="../../images/aporta-ya-icon.webp" alt="AportaYa Logo" width="48" height="48">
+                    <img src="../../images/aporta-ya-letters.webp" alt="AportaYa" width="100" class="letters">
+                </a>
+                <nav class="menu" aria-label="Menú principal">
+                    <label for="mobile-menu-label" for="menu-switch" class="mobile-menu">
+                        <span class="material-symbols-outlined">menu</span>
+                    </label>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <a href="../../index.html">
+                                Inicio
+                            </a> 
+                        </li>
+                        <li class="active-menu">
+                            <a href="projects.html">
+                                Explorar
+                            </a>
+                        </li>
+                        <li class="session-actions">
+                            <button class="btn btn-primary" onclick="location.href='../auth/login.html'">
+                                Iniciar Sesión
+                            </button>
+                            <button class="btn btn-secondary" onclick="location.href='../auth/signup.html'">
+                                Regístrate
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="projects-main">
+            <!-- Sidebar -->
+            <aside class="projects-sidebar">
+                <!-- Search -->
+                <form role="search" class="sidebar-search">
+                    <label for="search-projects" class="sr-only">Buscar proyectos</label>
+                    <div class="search-wrapper">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                        <input 
+                            id="search-projects" 
+                            type="search" 
+                            placeholder="Buscar proyectos"
+                            class="search-input"
+                        />
+                    </div>
+                </form>
+
+                <form class="sidebar-filters">
+                    <fieldset class="filter-group">
+                        <legend class="filter-title">Categorías</legend>
+                        <div class="category-chips">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend class="filter-title">Filtros</legend>
+                        
+                        <label class="filter-label">
+                            <span>Estado</span>
+                            <select name="estado" class="filter-select">
+                                <option value="">Todos</option>
+                                <option value="activo">Activo</option>
+                                <option value="finalizado">Finalizado</option>
+                            </select>
+                        </label>
+
+                        <label class="filter-label">
+                            <span>Monto</span>
+                            <select name="monto" class="filter-select">
+                                <option value="">Cualquier monto</option>
+                                <option value="0-1000">Menos de $1,000</option>
+                                <option value="1000-5000">$1,000 - $5,000</option>
+                                <option value="5000+">Más de $5,000</option>
+                            </select>
+                        </label>
+
+                        <label class="filter-label">
+                            <span>Popularidad</span>
+                            <select name="popularidad" class="filter-select">
+                                <option value="popular">Más populares</option>
+                                <option value="recientes">Recientes</option>
+                                <option value="financiados">Más financiados</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                </form>
+            </aside>
+
+            <section class="projects-section">
+                <h1 class="projects-title">Proyectos</h1>
+                
+                <div class="projects-grid">
+                <nav aria-label="Paginación de proyectos" class="pagination">
+                    <button class="pagination-btn" aria-label="Página anterior" disabled>
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button class="pagination-btn active" aria-current="page">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <span class="pagination-dots">...</span>
+                    <button class="pagination-btn">10</button>
+                    <button class="pagination-btn" aria-label="Página siguiente">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </nav>
+            </section>
+        </main>
+
+        <script src="../../scripts/menu.js"></script>
+        <script src="../../scripts/pages/projects-loader.js"></script>
+    </body>
+</html>
