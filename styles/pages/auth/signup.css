@@ -8,9 +8,6 @@ body {
     padding: var(--spM);
 }
 
-/* ===================================
-   FONDO DE ESTRELLAS ANIMADAS
-   =================================== */
 .stars {
     position: fixed;
     top: 0;
@@ -172,7 +169,6 @@ body {
     box-shadow: 0 0 0 2px rgba(17, 212, 114, 0.3);
 }
 
-/* Select specific */
 .signup-form select {
     appearance: none;
     cursor: pointer;
@@ -188,7 +184,6 @@ body {
     color: var(--text-light);
 }
 
-/* Password field con toggle solo CSS */
 .password-field {
     position: relative;
 }
@@ -228,19 +223,12 @@ body {
     font-size: 24px;
 }
 
-/* ===================================
-   MOBILE: ≤767px - Optimización
-   =================================== */
 @media screen and (max-width: 767px) {
-    /* Desactivar tail-fade para mejor performance */
     .star {
         animation: fall var(--fall-duration, 9s) var(--fall-delay, 0s) linear infinite;
     }
 }
 
-/* ===================================
-   ACCESIBILIDAD
-   =================================== */
 @media (prefers-reduced-motion: reduce) {
     .star {
         animation: none;

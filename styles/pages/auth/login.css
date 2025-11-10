@@ -234,7 +234,6 @@ body {
     font-size: 24px;
 }
 
-/* Link de olvido de contraseña */
 .forgot-password {
     padding: var(--spXS) var(--spM) 0;
     text-align: right;
@@ -252,7 +251,6 @@ body {
     opacity: 0.8;
 }
 
-/* Botón de submit */
 .form-submit {
     display: flex;
     padding: var(--spM);
@@ -295,7 +293,6 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Términos */
 .terms-text {
     color: #9db9ab;
     font-size: var(--sfM);
@@ -306,7 +303,6 @@ body {
     margin: 0;
 }
 
-/* Link de registro */
 .signup-link {
     color: #9db9ab;
     font-size: var(--sfM);
@@ -328,11 +324,7 @@ body {
     opacity: 0.8;
 }
 
-/* ===================================
-   MOBILE: ≤767px
-   =================================== */
 @media screen and (max-width: 767px) {
-    /* Desactivar tail-fade para mejor performance */
     .star {
         animation: fall var(--fall-duration, 9s) var(--fall-delay, 0s) linear infinite;
     }
@@ -365,9 +357,6 @@ body {
     }
 }
 
-/* ===================================
-   TABLET: 768px-991px
-   =================================== */
 @media (min-width: 768px) and (max-width: 991px) {
     .login-content-container {
         padding: var(--spXL);
@@ -379,9 +368,6 @@ body {
     }
 }
 
-/* ===================================
-   DESKTOP: ≥992px
-   =================================== */
 @media (min-width: 992px) {
     body {
         background: linear-gradient(135deg, #0d1d31 0%, #0c0d13 50%, #0d1d31 100%);
@@ -399,7 +385,6 @@ body {
         justify-content: space-between;
     }
 
-    /* Mostrar hero section en desktop */
     .hero-section {
         display: flex;
         flex: 1;
@@ -516,9 +501,6 @@ body {
     }
 }
 
-/* ===================================
-   ACCESIBILIDAD
-   =================================== */
 @media (prefers-reduced-motion: reduce) {
     .star {
         animation: none;
