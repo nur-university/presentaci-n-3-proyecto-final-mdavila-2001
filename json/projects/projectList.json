@@ -80,6 +80,66 @@
                 "description": "Plantar árboles en áreas urbanas para mejorar la calidad del aire y el entorno.",
                 "is_favorite": false,
                 "cover_image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoZG64IZDg5iIUkgbP5WOb-xe9U2Ckhp-Sg&s"
+            },
+            {
+                "id": 104,
+                "title": "Talleres de arte para jóvenes",
+                "category_id": 2,
+                "category": {
+                    "id": 2,
+                    "name": "Arte",
+                    "description": "Fomenta proyectos artísticos y culturales."
+                },
+                "goal_amount": 4000,
+                "raised_amount": 1500,
+                "description": "Ofrecer talleres de arte gratuitos para jóvenes en comunidades desfavorecidas.",
+                "is_favorite": true,
+                "cover_image_url": "https://www.telemadrid.es/imagenes/2020/11/16/taller-de-arte.jpg"
+            },
+            {
+                "id": 105,
+                "title": "Programa de alfabetización para adultos",
+                "category_id": 4,
+                "category": {
+                    "id": 4,
+                    "name": "Educación",
+                    "description": "Apoya proyectos educativos y becas para estudiantes necesitados."
+                },
+                "goal_amount": 7000,
+                "raised_amount": 5000,
+                "description": "Implementar un programa de alfabetización para adultos en zonas rurales.",
+                "is_favorite": false,
+                "cover_image_url": "https://www.unicef.org/es/sites/default/files/styles/media_large/public/2020-09/Adult-literacy_0.jpg"
+            },
+            {
+                "id": 106,
+                "title": "Centro comunitario de apoyo psicológico",
+                "category_id": 3,
+                "category": {
+                    "id": 3,
+                    "name": "Comunidad",
+                    "description": "Fomenta el desarrollo comunitario y la inclusión social."
+                },
+                "goal_amount": 10000,
+                "raised_amount": 6200,
+                "description": "Establecer un centro comunitario que ofrezca apoyo psicológico gratuito.",
+                "is_favorite": true,
+                "cover_image_url": "https://www.psicologiaymente.com/imagenes/2020/03/centro-psicologico.jpg"
+            },
+            {
+                "id": 107,
+                "title": "Investigación científica para energías renovables",
+                "category_id": 7,
+                "category": {
+                    "id": 7,
+                    "name": "Ciencia",
+                    "description": "Apoya proyectos científicos e innovadores."
+                },
+                "goal_amount": 15000,
+                "raised_amount": 9000,
+                "description": "Financiar una investigación para desarrollar nuevas tecnologías de energías renovables.",
+                "is_favorite": false,
+                "cover_image_url": "https://www.abc.es/resizer/8Y6U1bXKX1Z5v3kQ1F1t1jv6H3E=/1200x675/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/abc/JCU7YQY5K5G7XOXMZ3KZ7KZ4TA.jpg"
             }
         ]
     }

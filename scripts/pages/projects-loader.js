@@ -94,7 +94,6 @@ function renderCategories(categories) {
         chip.dataset.categoryId = category.id;
         chip.textContent = category.name;
         
-        // Event listener para filtrar
         chip.addEventListener('click', () => {
             const isPressed = chip.getAttribute('aria-pressed') === 'true';
             chip.setAttribute('aria-pressed', !isPressed);
@@ -116,17 +115,14 @@ async function loadProjects() {
         
         const data = await response.json();
         
-        // Renderizar proyectos
         if (data.data && data.data.projects) {
             renderProjects(data.data.projects);
         }
         
-        // Renderizar categorías
         if (data.extraData && data.extraData.categories) {
             renderCategories(data.extraData.categories);
         }
         
-        // Actualizar información extra
         if (data.extraData) {
             updateExtraInfo(data.extraData);
         }

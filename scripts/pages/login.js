@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeFormValidation();
 });
 
-// ===================================
-// GENERAR VALORES ALEATORIOS PARA ESTRELLAS
-// ===================================
 function initializeStars() {
     const stars = document.querySelectorAll('.star');
     
@@ -30,9 +27,6 @@ function initializeStars() {
     });
 }
 
-// ===================================
-// TOGGLE DE VISIBILIDAD DE CONTRASEÑA
-// ===================================
 function initializePasswordToggle() {
     const toggleButtons = document.querySelectorAll('[data-toggle="password"]');
     
@@ -55,9 +49,6 @@ function initializePasswordToggle() {
     });
 }
 
-// ===================================
-// VALIDACIÓN BÁSICA DEL FORMULARIO
-// ===================================
 function initializeFormValidation() {
     const form = document.querySelector('.login-form');
     
@@ -69,59 +60,45 @@ function initializeFormValidation() {
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
         
-        // Validación básica
         if (!email || !password) {
             showNotification('Por favor, completa todos los campos', 'error');
             return;
         }
         
-        // Validar formato de email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             showNotification('Por favor, ingresa un correo electrónico válido', 'error');
             return;
         }
         
-        // Validar longitud mínima de contraseña
         if (password.length < 6) {
             showNotification('La contraseña debe tener al menos 6 caracteres', 'error');
             return;
         }
         
-        // Aquí iría la lógica de autenticación real
-        // Por ahora solo mostramos mensaje de éxito
         showNotification('Iniciando sesión...', 'success');
         
-        // Simular delay de login
         setTimeout(() => {
             console.log('Login attempt:', { email, password: '***' });
-            // window.location.href = '../../index.html';
         }, 1500);
     });
 }
 
-// ===================================
-// SISTEMA DE NOTIFICACIONES
-// ===================================
 function showNotification(message, type = 'info') {
-    // Remover notificación existente si hay
     const existingNotification = document.querySelector('.notification');
     if (existingNotification) {
         existingNotification.remove();
     }
     
-    // Crear notificación
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.textContent = message;
     
-    // Estilos inline para la notificación
     Object.assign(notification.style, {
         position: 'fixed',
         top: '20px',
         right: '20px',
         padding: '16px 24px',
-        backgroundColor: type === 'error' ? '#dc2626' : type === 'success' ? '#00bc00' : '#0766ff',
         color: '#ffffff',
         borderRadius: '8px',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
@@ -136,14 +113,12 @@ function showNotification(message, type = 'info') {
     
     document.body.appendChild(notification);
     
-    // Auto-remover después de 4 segundos
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease-in';
         setTimeout(() => notification.remove(), 300);
     }, 4000);
 }
 
-// Agregar estilos de animación para notificaciones
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {

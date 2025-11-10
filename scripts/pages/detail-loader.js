@@ -74,7 +74,6 @@
       const sponsors = project.sponsors_count || project.backers_count || project.supporters || project.patrons || '';
       const daysLeft = project.days_left || project.remaining_days || project.ends_in_days || '';
 
-      // Inyectar en DOM (ids definidos en HTML)
       setText('project-title', title);
       setImage('project-cover', cover, title || 'Portada del proyecto');
       setText('project-meta', [category, creator ? `Creado por ${creator}` : '', location].filter(Boolean).join(' · '));
