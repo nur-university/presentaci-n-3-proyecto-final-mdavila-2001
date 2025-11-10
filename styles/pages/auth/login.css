@@ -99,48 +99,49 @@ body {
     z-index: 1;
     display: flex;
     flex: 1;
-    justify-content: flex-end;
-    padding: var(--spXL);
+    justify-content: center;
+    align-items: center;
+    padding: var(--spM);
     width: 100%;
+    min-height: 100vh;
 }
 
 .login-content-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 512px;
-    padding: var(--spL);
+    max-width: 480px;
+    padding: var(--spM);
     background: rgba(16, 35, 25, 0.75);
     backdrop-filter: blur(16px);
     border-radius: var(--border-radius-lg);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
                 0 0 0 1px rgba(17, 212, 114, 0.1);
-    align-self: center;
 }
 
 .login-title {
     color: var(--text-light);
     font-family: var(--font-display);
-    font-size: var(--sf2XL);
+    font-size: var(--sfXL);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
-    padding: var(--spM) var(--spM) var(--spL);
+    padding: var(--spM) var(--spS) var(--spM);
     margin: 0;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
-    gap: var(--spM);
+    gap: var(--spS);
 }
 
 .form-field {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    gap: var(--spM);
-    padding: 0 var(--spM);
+    gap: var(--spS);
+    padding: 0 var(--spS);
 }
 
 .form-label {
@@ -162,9 +163,9 @@ body {
     outline: none;
     border: none;
     background-color: #283930;
-    height: 56px;
-    padding: var(--spM);
-    font-size: var(--sfL);
+    height: 48px;
+    padding: var(--spS) var(--spM);
+    font-size: var(--sfM);
     font-weight: 400;
     line-height: 1.5;
     font-family: var(--font-base);
@@ -192,18 +193,18 @@ body {
     align-items: stretch;
     border-radius: var(--border-radius-md);
     position: relative;
-    height: 56px;
+    height: 48px;
 }
 
 .password-input {
     border-radius: var(--border-radius-md);
-    padding-right: calc(var(--spM) + 44px);
-    height: 56px;
+    padding-right: calc(var(--spM) + 40px);
+    height: 48px;
 }
 
 .password-toggle {
     position: absolute;
-    right: var(--spM);
+    right: var(--spS);
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -216,8 +217,8 @@ body {
     cursor: pointer;
     border-radius: var(--border-radius-sm);
     transition: color 0.2s, background-color 0.2s;
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
 }
 
 .password-toggle:hover {
@@ -231,17 +232,17 @@ body {
 }
 
 .password-toggle .material-symbols-outlined {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .forgot-password {
-    padding: var(--spXS) var(--spM) 0;
+    padding: 0 var(--spS);
     text-align: right;
 }
 
 .forgot-link {
     color: var(--primary);
-    font-size: var(--sfM);
+    font-size: var(--sfS);
     font-weight: 500;
     text-decoration: underline;
     transition: opacity 0.2s;
@@ -253,7 +254,7 @@ body {
 
 .form-submit {
     display: flex;
-    padding: var(--spM);
+    padding: var(--spS);
 }
 
 .btn-login {
@@ -265,7 +266,7 @@ body {
     justify-content: center;
     overflow: hidden;
     border-radius: var(--border-radius-md);
-    height: 48px;
+    height: 44px;
     padding: 0 var(--spM);
     flex: 1;
     background-color: var(--primary);
@@ -295,20 +296,20 @@ body {
 
 .terms-text {
     color: #9db9ab;
-    font-size: var(--sfM);
+    font-size: var(--sfS);
     font-weight: 400;
     line-height: 1.5;
-    padding: var(--spXS) var(--spM) var(--spM);
+    padding: 0 var(--spS) var(--spS);
     text-align: center;
     margin: 0;
 }
 
 .signup-link {
     color: #9db9ab;
-    font-size: var(--sfM);
+    font-size: var(--sfS);
     font-weight: 400;
     line-height: 1.5;
-    padding: var(--spM) var(--spM) var(--spXS);
+    padding: var(--spS) var(--spS) 0;
     text-align: center;
     margin: 0;
 }
@@ -381,8 +382,9 @@ body {
     }
 
     .login-wrapper {
-        padding: var(--sp2XL);
-        justify-content: space-between;
+        padding: var(--spL);
+        justify-content: center;
+        gap: var(--sp2XL);
     }
 
     .hero-section {
@@ -475,25 +477,24 @@ body {
     }
 
     .login-content-container {
-        max-width: 600px;
-        padding: var(--sp2XL);
-        margin-right: var(--sp2XL);
+        max-width: 480px;
+        padding: var(--spL);
     }
 
     .login-title {
-        font-size: var(--sf3XL);
-        padding: var(--spXL) var(--spM) var(--sp2XL);
+        font-size: var(--sf2XL);
+        padding: var(--spM) var(--spM) var(--spL);
     }
 
     .form-input,
     .password-input {
-        height: 56px;
-        font-size: var(--sfL);
+        height: 48px;
+        font-size: var(--sfM);
     }
 
     .btn-login {
-        height: 56px;
-        font-size: var(--sfL);
+        height: 44px;
+        font-size: var(--sfM);
     }
 
     .form-input:hover {
