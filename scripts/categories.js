@@ -1,4 +1,4 @@
-const DATA_URL = '../json/dashboard/dashboard.json';
+const DATA_URL = '/json/dashboard/dashboard.json';
 
 async function loadCategories() {
   try {
